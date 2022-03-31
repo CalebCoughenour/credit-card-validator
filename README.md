@@ -13,3 +13,15 @@ Expected output: "This card number is not valid"
 Test: "Return "This card number is not valid" if given an invalid card number length"
 Code: validate("1234567890")
 Expected output: "This card number is not valid"
+
+Test: "Return "This card number is not valid" if luhn algorithm sum of input does not end in a 0"
+Code: validate("4102080880435620")
+Expected output: "This card number is not valid"
+
+
+
+luhn()
+
+Test: "Return 52 when given '4102080880435620'"
+Code: luhn("4102080880435620")
+Expected output: 52
