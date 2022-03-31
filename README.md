@@ -10,3 +10,6 @@ Test: "It will return "This card number is not valid" if given an empty string"
 Code: validate(" ");
 Expected output: "This card number is not valid"
 
+Test: "Return "This card number is not valid" if given an invalid card number length"
+Code: validate("1234567890")
+Expected output: "This card number is not valid"
